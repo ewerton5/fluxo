@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Facenote</title>
+	<link rel="stylesheet" href="css/estilo.css"/>
+</head>
+<body>
+<header id="cabecalho">
+	<div id='logo'>
+		<a href="index.html">Facenote</a>
+	</div>
+	<li><input type='text' placeholder='Pesquisar'></li>
+	<li><a href=""><img src="imagens/homem.jpg" id='icone'>Fulano Silva</a></li>
+	<li><a href="">Página inicial</a></li>
+	<li><a href="">Criar</a></li>
+	<li><a href="">Sair</a></li>
+</header>
+<div id="interface">
+	<aside>
+		<div class="lateral"><a href=""><img src="imagens/homem.jpg" id='icone'>Fulano Silva</a></div>
+		<div class="lateralfixo"><a href="">Feed de Notícias</a></div>
+		<div class="lateral"><a href="">Messenger</a></div>
+		<div class="lateral"><a href="">Watch</a></div>
+		<div class="lateral"><a href="">Marketplace</a></div>
+		<p class="cinza">Atalhos</p>
+		<div class="lateral"><a href="">Carona</a></div>
+		<div class="lateral"><a href="">Mochileiros</a></div>
+		<div class="lateral"><a href="">Genialidades</a></div>
+		<div class="lateral"><a href="">DeepWeb</a></div>
+		<p class="cinza">Explorar</p>
+		<div class="lateral"><a href="">Páginas</a></div>
+		<div class="lateral"><a href="">Grupos</a></div>
+		<div class="lateral"><a href="">Eventos</a></div>
+		<div class="lateral"><a href="">Campanhas de arre...</a></div>
+		<div class="lateral"><a href="">Portal do Cidadão</a></div>
+		<div class="lateral"><a href="">Grupos de compra ...</a></div>
+		<div class="lateral"><a href="">Ofertas Clima</a></div>
+		<div class="lateral"><a href="">Atividade de anúnci...</a></div>
+		<div class="lateral"><a href="">Vídeo de jogos</a></div>
+		<div class="lateral"><a href="">Perguntas</a></div>
+		<div class="lateral"><a href="">Empregos</a></div>
+		<div class="lateral"><a href="">Lista de amigos</a></div>
+		<div class="lateral"><a href="">Lembranças</a></div>
+		<div class="lateral"><a href="">Jogos</a></div>
+		<div class="lateral"><a href="">Salvos</a></div>
+		<div class="lateral"><a href="">Encontrar pessoas</a></div>
+		<div class="lateral"><a href="">Recomendações</a></div>
+	</aside>
+	<section>
+		<div id='esquerda'>
+			<div id="criar">Criar publicação</div>
+			<div class="post">
+				<div class='borda'>
+					<input type='text' id='text' placeholder='No que você está pensando?'>
+				</div>
+				<div class="borda">
+				<ul id="anexo">
+					<li><a href="">Foto/Vídeo</a></li>
+					<li><a href="">Marcar amigo</a></li>
+					<li><a href="">Sentimento</a></li>
+				</ul>
+				</div>
+				<button id='compartilhar' onclick="postar()">Compartilhar</button>
+			</div>
+			<br id="br">
+			<div id='post1' class="post">
+				<div class='borda'>
+					<a href=""><img src="imagens/mulher.jpg" id='icone'>Fulana Souza</a>
+					<p>Eu queeeeeroooo</p>
+					<img id='post'src="imagens/cachorro.jpg">
+				</div>
+				<div class='borda'>
+					<img src="imagens/curtir.png" id="icone"><span id="like1">3</span>
+				</div>
+				<div class='borda'>
+					<ul id="anexo">
+						<li><button id='buttonlike1' onclick="curtir('like1')">Curtir</button></li>
+						<li><label for='coment1'>Comentar</label></li>
+						<li><a href="">Compartilhar</a></li>
+					</ul>
+				</div>
+				<input id='coment1' onclick="enter('1')" class='comentario' type='text' placeholder='Escreva um comentário...'>
+				<h1 id='contcoment1' class='cont'>1</h1>
+				<h1 id='booleanlike1' class='cont'>true</h1>
+			</div>
+		</div>
+		<div id="direita">
+			<div id='sugerido'>
+				<p><p class="cinza">Pessoas que você talvez conheça</p>
+				<div class='borda'>
+				<p><a href=""><img src="imagens/mulher2.jpg" id='icone'>Beltrana Costa</a></p>				
+				<div class="lateralfixo"><a href="">Adicionar aos amigos</a></div><br>
+				</div>
+				<div class='borda'>
+				<p><a href=""><img src="imagens/homem2.jpg" id='icone'>Ciclano Sales</a></p>
+				<div class="lateralfixo"><a href="">Adicionar aos amigos</a></div><br>
+				</div>
+				<div class='borda'>
+				<p><a href=""><img src="imagens/homem3.jpg" id='icone'>Beltrano Passos</a></p>
+				<div class="lateralfixo"><a href="">Adicionar aos amigos</a></div><br>
+				</div>
+				<p><a href=""><img src="imagens/mulher3.jpg" id='icone'>Ciclana Lima</a></p>
+				<div class="lateralfixo"><a href="">Adicionar aos amigos</a></div>
+			</div>
+			<footer id="rodape">
+				<p>&copy; Copyright 2019 - by Ewerton Vieira<br/>
+				<a href="http://facebook.com/ewerton4" target="_blank">Facebook</a> | <a href="http://twitter.com/" target="_blank">Twitter</a></p>
+			</footer>
+		</div>
+	</section>
+</div>
+<script language="Javascript" src="script/script.js"></script>
+<h1 id='cont' class='cont'>2</h1>
+</body>
+</html>
